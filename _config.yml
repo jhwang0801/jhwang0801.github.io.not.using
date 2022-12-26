@@ -12,20 +12,20 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : "Dev+=Looper Tech Blog"
+locale                   : "ko"
+title                    : "Dev+Looper's Dev Blog"
 title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "Dev+=Looper 기술 블로그"
+subtitle                 : "Your goals, Minus your doubts, Equal your reality"
+name                     : "Dev+Looper Blog"
 description              : "행복하기 위해 개발을 시작한 백엔드 개발자"
 url                      : "https://jhwang0801.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : "/assets/images/logo.png"
-logo                     : "/assets/images/coding-icon.png"
+#teaser                   : "/assets/images/logo.png"
+#logo                     : "/assets/images/coding-icon.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -105,8 +105,8 @@ analytics:
 # Site Author
 author:
   name             : "Jayson Hwang"
-  avatar           : "/assets/images/lala.png"
-  bio              : "Your goals, Minus your doubts, Equal your reality"
+  avatar           : "/assets/images/profile.png"
+  bio              : "행복한 백엔드 개발자 🤩"
   location         : "South Korea"
   email            :
   links:
@@ -267,8 +267,9 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
-      read_time: true
+      author_profile: false
+      read_time: false
+      show_date: true
       comments: # true
       share: true
       related: true
@@ -279,8 +280,10 @@ defaults:
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: false
       comments: false
       share: true
       related: false
+      sidebar:
+        nav: "sidebar-contents"

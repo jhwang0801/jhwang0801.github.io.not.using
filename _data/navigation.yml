@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "Quick-Start Guide"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Categories"
+    url: /categories/
   - title: "About"
     url : /about/
   # - title: "About"
@@ -13,6 +13,19 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
 
+sidebar-contents:
+  - title: "Django"
+    children:
+      - title: "- ORM"
+        url: /categories/#ORM
+      - title: "- Methods"
+        url: /categories/#methods
+  - title: "Database"
+    url: /categories/#database
+  - title: "Amazon Web Services"
+    url: /categories/#amazon-web-services
+  - title: "etc."
+    url: /categories/#etc
 #  commit e0fd279에 기존에 있던 메뉴 구성을 삭제하고 새로 “블로그 방문하기”와 “About” 메뉴를 구성하였다
 #
 #  _data/navigation.yml 파일에 아래와같은 내용으로 등록하였다.
