@@ -1,25 +1,30 @@
 # main links
 main:
-  - title: "Categories"
-    url: /categories/
-  - title: "About"
-    url : /about/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
-  # - title: "Sample Collections"
-  #   url: /collection-archive/
-  # - title: "Sitemap"
-  #   url: /sitemap/
+  - title: "HOME"
+    url: /
+  - title: "ABOUT"
+    url: /about/
+  - title: "CATEGORY"
+    url: /category/
+    sublinks:
+      - title: DJANGO
+        url: /django/
+      - title: PYTHON
+        url: /python/
+      - title: DATABASE
+        url: /database/
+      - title: AMAZON WEB SERVICES
+        url: /aws/
+      - title: BLOG
+        url: /blog/
+  - title: "SERVICES"
+    url: /services/
+  - title: "TAGS"
+    url: /tags/
 
 sidebar-contents:
   - title: "Django"
-    children:
-      - title: "- ORM"
-        url: /categories/#ORM
-      - title: "- Methods"
-        url: /categories/#methods
+    url: /django/
   - title: "Database"
     url: /categories/#database
   - title: "Amazon Web Services"

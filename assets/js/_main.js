@@ -134,3 +134,15 @@ $(function() {
     }
   });
 });
+
+  // Follow menu drop down
+  $(".author__urls-wrapper button").on("click", function() {
+    $(".author__urls").toggleClass("is--visible");
+    $(".author__urls-wrapper button").toggleClass("open");
+  });
+  // when clicking on a dropdown navbar menu, show the child links
+  $(".masthead__menu-item").on("click", ".item-link", function() {
+    if ($(this).hasClass("dropdown")) {
+      $(this).next().toggleClass("is--visible");
+    }
+  });
